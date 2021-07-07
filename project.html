@@ -18,7 +18,7 @@
 		<script src="js/custom.js" defer></script>
 	</head>
 	<body>
-		<header class="">
+		<header class="project-width">
 			<!-- Mobile top -->
 			<div class="container-fluid d-lg-none bgi-mobile">
 				<div class="row">
@@ -65,20 +65,10 @@
 							</a>
 						</div>
 						<div class="nav__ul-div">
-							<ul class="nav__ul">
-								<li class="nav__ul-li">
-									<a href="#about-us" class="nav__ul-li-a mx-4">Over ons</a>
-								</li>
-								<li class="nav__ul-li">
-									<a href="#projects" class="nav__ul-li-a mx-4">Projecten</a>
-								</li>
-								<li class="nav__ul-li">
-									<a href="#team" class="nav__ul-li-a mx-4">Team</a>
-								</li>
-								<li class="nav__ul-li">
-									<a href="#contact" class="nav__ul-li-a mx-4">Contact</a>
-								</li>
-							</ul>
+							<a href="/" class="header-close-a fs-1530"
+								>Terug
+								<img src="../img/dark-close-circle.svg" alt="" class="ml-4"
+							/></a>
 						</div>
 					</div>
 				</div>
@@ -97,7 +87,7 @@
 					<div class="col px-0">
 						<div class="header__image-title">
 							<h1 class="main-future-title-mobile clr-gray-4 mb-0">
-								Your <span class="clr-light">Future</span><br />starts here
+								<span class="clr-light">Visserstraat</span><br />Eindhoven
 							</h1>
 						</div>
 					</div>
@@ -129,9 +119,9 @@
 				/>
 				<div class="container-fluid header-text d-none d-lg-block">
 					<div class="col-lg-4">
-						<div class="header__image-title text-center">
+						<div class="header__image-title">
 							<h1 class="clr-gray-4 mb-0">
-								Your <span class="clr-light">Future</span><br />starts here
+								<span class="clr-light">Visserstraat</span><br />Eindhoven
 							</h1>
 						</div>
 					</div>
@@ -159,7 +149,7 @@
 
 			<div tabindex="-1" id="scroll-down-div" class="container-fluid bgc-dark">
 				<div class="row py-lg-5">
-					<div tabindex="-1" id="about-us" class="col-lg-6 offset-lg-3 py-lg-5">
+					<div tabindex="-1" id="about-us" class="col-lg-6 offset-lg-4 py-lg-5">
 						<p class="bgc-dark py-5 mb-5">
 							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
 							nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -176,148 +166,15 @@
 				</div>
 			</div>
 
-			<div tabindex="-1" id="projects" class="container-fluid bgc-dark pb-5">
-				<div class="row">
-					<div class="col-lg-5 offset-lg-1">
-						<h1 class="h1-projects fs-4080 fw-medium">
-							Projecten<sup class="projects-sup fs-1525 fw-light">4</sup>
-						</h1>
-					</div>
-					<div class="col-lg-5 d-flex align-items-end">
-						<a href="#" class="a-gray-4 fs-1525 clr-gray-4 mr-5"
-							>Nieuwe projecten</a
-						>
-						<a href="#" class="a-gray-4 fs-1525 clr-gray-4"
-							>Lopende projecten</a
-						>
-					</div>
-				</div>
-			</div>
-
 			<div class="bgi-dark-overlay pt-5">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-lg-5 offset-lg-1">
-							<div class="my-4" id="project1">
-								<div class="col bgi-project"></div>
-								<div class="col bgc-gray-5 py-4 px-5">
-									<div class="row">
-										<div class="col-lg-6 d-flex flex-column">
-											<span class="clr-light fs-2530 fw-extra-light"
-												>Projectnaam</span
-											>
-											<span class="clr-light fs-1520 fw-extra-light"
-												>Project detail</span
-											>
-										</div>
-										<div
-											class="
-												col-6
-												d-flex
-												align-items-center
-												justify-content-end
-											"
-										>
-											<a
-												href="#"
-												class="a-btn a-btn-light rounded-pill d-none d-lg-block"
-												>Nieuw project</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="my-4" id="project2">
-								<div class="col bgi-project"></div>
-								<div class="col bgc-gray-5 py-4 px-5">
-									<div class="row">
-										<div class="col-lg-6 d-flex flex-column">
-											<span class="clr-light fs-2530 fw-extra-light"
-												>Projectnaam</span
-											>
-											<span class="clr-light fs-1520 fw-extra-light"
-												>Project detail</span
-											>
-										</div>
-										<div
-											class="
-												col-6
-												d-flex
-												align-items-center
-												justify-content-end
-											"
-										>
-											<a
-												href="#"
-												class="a-btn a-btn-light rounded-pill d-none d-lg-block"
-												>Nieuw project</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-5">
-							<div class="my-4" id="project3">
-								<div class="col bgi-project"></div>
-								<div class="col bgc-gray-5 py-4 px-5">
-									<div class="row">
-										<div class="col-lg-6 d-flex flex-column">
-											<span class="clr-light fs-2530 fw-extra-light"
-												>Projectnaam</span
-											>
-											<span class="clr-light fs-1520 fw-extra-light"
-												>Project detail</span
-											>
-										</div>
-										<div
-											class="
-												col-6
-												d-flex
-												align-items-center
-												justify-content-end
-											"
-										>
-											<a
-												href="#"
-												class="a-btn a-btn-light rounded-pill d-none d-lg-block"
-												>Nieuw project</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="my-4" id="project4">
-								<div class="col bgi-project"></div>
-								<div class="col bgc-gray-5 py-4 px-5">
-									<div class="row">
-										<div class="col-lg-6 d-flex flex-column">
-											<span class="clr-light fs-2530 fw-extra-light"
-												>Projectnaam</span
-											>
-											<span class="clr-light fs-1520 fw-extra-light"
-												>Project detail</span
-											>
-										</div>
-										<div
-											class="
-												col-6
-												d-flex
-												align-items-center
-												justify-content-end
-											"
-										>
-											<a
-												href="#"
-												class="a-btn a-btn-light rounded-pill d-none d-lg-block"
-												>Nieuw project</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="col-lg-6 offset-lg-3 px-0">
+							<img
+								src="../img/project/VisserstraatK3_project_1.png"
+								alt=""
+								class="pb-5 mb-5"
+							/>
 						</div>
 					</div>
 				</div>
@@ -325,19 +182,25 @@
 
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-7 offset-lg-1">
-						<h2 class="py-5 mt-5">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt ut.
+					<div class="col px-0">
+						<img
+							src="../img/project/VisserstraatK2_project_2.png"
+							alt=""
+							class="w-100"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid title-left-text-right">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2 class="">
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
 						</h2>
 					</div>
-				</div>
-			</div>
-
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-6 offset-lg-3">
-						<p class="py-lg- 5">
+					<div class="col-lg-6">
+						<p class="">
 							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
 							nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
 							erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -353,92 +216,110 @@
 				</div>
 			</div>
 
-			<div
-				tabindex="-1"
-				id="team"
-				class="container-fluid half-bgc-light-gray-3"
-			>
+			<div class="container-fluid">
 				<div class="row">
-					<!-- Mobile slider team -->
-					<div class="col d-lg-none">
-						<div
-							id="projectsSlider"
-							class="carousel slide"
-							data-ride="carousel"
-						>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img
-										src="../img/man-in-suit.png"
-										class="d-block w-100"
-										alt="..."
-									/>
-								</div>
-								<div class="carousel-item">
-									<img
-										src="../img/man-in-suit.png"
-										class="d-block w-100"
-										alt="..."
-									/>
-								</div>
-								<div class="carousel-item">
-									<img
-										src="../img/man-in-suit.png"
-										class="d-block w-100"
-										alt="..."
-									/>
-								</div>
+					<div class="col px-0 mb-4">
+						<img
+							src="../img/project/VisserstraatK2_project_3.png"
+							alt=""
+							class="w-100"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6 pl-lg-0">
+						<div class="bgi-old-situation">
+							<p
+								class="
+									situation-overlay
+									fs-1520
+									bgc-light
+									clr-dark
+									rounded-pill
+								"
+							>
+								Oude situatie
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6 pr-lg-0">
+						<div class="bgi-new-situation">
+							<p
+								class="
+									situation-overlay
+									fs-1520
+									bgc-light
+									clr-dark
+									rounded-pill
+								"
+							>
+								Nieuwe situatie
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid project-details-div bgc-dark">
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1 px-0">
+						<h2 class="clr-gray-4 p-37">Details</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="row">
+							<div class="col-lg-3 p-37">
+								<p class="clr-gray-4">Detail</p>
+								<p class="clr-light">Omschrijving</p>
+							</div>
+							<div class="col-lg-3 p-37">
+								<p class="clr-gray-4">Detail</p>
+								<p class="clr-light">Omschrijving</p>
+							</div>
+							<div class="col-lg-3 p-37">
+								<p class="clr-gray-4">Detail</p>
+								<p class="clr-light">Omschrijving</p>
+							</div>
+							<div class="col-lg-3 p-37">
+								<p class="clr-gray-4">Detail</p>
+								<p class="clr-light">Omschrijving</p>
 							</div>
 						</div>
 					</div>
-					<!-- desktop -->
-					<div class="col-lg-10 offset-lg-1 d-none d-lg-block">
+				</div>
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1">
 						<div class="row">
-							<div class="col-lg-3">
-								<div class="col bgi-man"></div>
-								<div class="col bgc-dark d-flex flex-column py-4 px-5">
-									<span class="clr-light fs-2530 fw-extra-light"
-										>Burhan Oruc</span
-									>
-									<span class="clr-light fs-1520 fw-extra-light">CEO</span>
-								</div>
+							<div class="col-lg-3 p-37">
+								<p class="clr-gray-4">Detail</p>
+								<p class="clr-light">Omschrijving</p>
 							</div>
-							<div class="col-lg-3">
-								<div class="col bgi-man"></div>
-								<div class="col bgc-dark d-flex flex-column py-4 px-5">
-									<span class="clr-light fs-2530 fw-extra-light"
-										>Burhan Oruc</span
-									>
-									<span class="clr-light fs-1520 fw-extra-light">CEO</span>
-								</div>
+							<div class="col-lg-3 p-37">
+								<p class="clr-gray-4">Detail</p>
+								<p class="clr-light">Omschrijving</p>
 							</div>
-							<div class="col-lg-3">
-								<div class="col bgi-man"></div>
-								<div class="col bgc-dark d-flex flex-column py-4 px-5">
-									<span class="clr-light fs-2530 fw-extra-light"
-										>Burhan Oruc</span
-									>
-									<span class="clr-light fs-1520 fw-extra-light">CEO</span>
-								</div>
+							<div class="col-lg-3 p-37">
+								<p class="clr-gray-4">Detail</p>
+								<p class="clr-light">Omschrijving</p>
 							</div>
-							<div class="col-lg-3">
-								<div class="col bgi-man"></div>
-								<div class="col bgc-dark d-flex flex-column py-4 px-5">
-									<span class="clr-light fs-2530 fw-extra-light"
-										>Burhan Oruc</span
-									>
-									<span class="clr-light fs-1520 fw-extra-light">CEO</span>
-								</div>
+							<div class="col-lg-3 p-37">
+								<p class="clr-gray-4">Detail</p>
+								<p class="clr-light">Omschrijving</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div tabindex="-1" id="contact" class="bgi-light-dark-diagonal">
+			<!-- Contact -->
+			<div tabindex="-1" id="contact" class="bgi-gray-dark-diagonal">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-lg-6 bgi-building">
+						<div class="col-lg-6 bgi-contact">
 							<div class=""></div>
 						</div>
 						<div
@@ -475,7 +356,7 @@
 			</div>
 		</main>
 
-		<footer class="bgc-dark pt-lg-5">
+		<footer class="bgc-gray-5 pt-lg-5">
 			<div class="container-fluid py-lg-5">
 				<div class="row my-lg-5">
 					<div class="col-lg-1 offset-lg-1">
