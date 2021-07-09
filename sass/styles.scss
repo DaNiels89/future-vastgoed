@@ -137,6 +137,8 @@ body {
 	font-family: "Kanit", sans-serif;
 	font-weight: $fw-light;
 	color: $clr-gray-5;
+	background: $clr-gray-1;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -166,7 +168,7 @@ a {
 	&.a-btn {
 		font-size: $clamp1520;
 		text-decoration: none;
-		padding: 0.5em 3em;
+		padding: 1em 2em;
 	}
 	&.a-gray-4 {
 		&:hover,
@@ -183,7 +185,7 @@ a {
 		padding: 0.5em 1.5em;
 		&:hover,
 		&:focus {
-			background: $clr-dark;
+			background: $clr-gray-5;
 			color: $clr-light;
 		}
 	}
@@ -219,7 +221,7 @@ header {
 	background-image: url("../img/nav-mobile-bgi-01.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 25vh;
+	height: 20vh;
 	width: 100%;
 }
 
@@ -240,12 +242,9 @@ header {
 }
 
 .nav__ul-li {
-	// font-size: 15px;
-	// font-size: $clamp1523;
 }
 
 .nav__ul-li-a {
-	font-size: 15px;
 	font-size: $clamp1523;
 	color: $clr-gray-5;
 	&:hover,
@@ -312,6 +311,7 @@ header {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	transform: translateY(1px);
 }
 
 .header-text-mobile {
@@ -329,7 +329,7 @@ header {
 	position: absolute;
 	bottom: 6em;
 	left: 0;
-	display: flex !important;
+	display: flex;
 }
 
 .a-scroll-down {
@@ -342,24 +342,45 @@ header {
 }
 // End header
 
-// To remove line under header-image that sometimes pops up
-#scroll-down-div {
-	// transform: translateY(-1px);
+// Projecten
+.about-us-container,
+.projects-container {
+	padding-top: 5em;
 }
 
-// Projecten
+.project-main-text {
+	padding-top: 9em;
+}
+
+.project-main-paragraph {
+	padding-top: 3em;
+}
+
+.light-gray-1-bgc-div {
+	height: 9em;
+	background: $clr-gray-1;
+	&.h-11em {
+		height: 11em;
+	}
+}
+
+.light-gray-3-bgc-div {
+	height: 15em;
+	background: $clr-gray-3;
+}
+
 .h1-projects {
 	color: $clr-gray-4;
 	margin-bottom: 0.5em;
+	line-height: 1;
 }
 
 .projects-sup {
-	vertical-align: top;
-	line-height: 0.03215em;
+	vertical-align: super;
 }
 
 .bgi-dark-overlay {
-	background-image: url("../img/dark-bg-img-01.svg");
+	background-image: url("../img/bgi-first-project-01.svg");
 	background-repeat: no-repeat;
 }
 
@@ -368,12 +389,76 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: $clr-dark;
-	background-size: cover;
+	background-size: 100%;
 	min-height: 250px;
 	width: 100%;
+	position: relative;
+	transition: background-size 0.3s;
+
+	&::after {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(26, 29, 33, 0.6);
+		content: "";
+		display: block;
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: opacity 0.3s;
+	}
+}
+
+.plus-symbol {
+	position: absolute;
+	left: calc(50% - 15px);
+	top: calc(50% - 15px);
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+}
+
+.project-detail-inner {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	position: relative;
+
+	&:hover {
+		.bgi-project {
+			background-size: 120%;
+
+			&::after {
+				opacity: 1;
+			}
+		}
+		.a-btn-light {
+			background: $clr-gray-5;
+			color: $clr-light;
+		}
+		.plus-symbol {
+			opacity: 1;
+		}
+	}
 }
 
 // Team
+// Mobile slider
+.slick-slide {
+	padding-left: 0.334em;
+	padding-right: 0.334em;
+}
+
+.slick-dots {
+	display: flex;
+	list-style-type: none;
+	margin-left: calc(40px + 0.334em);
+	margin-right: calc(40px + 0.334em);
+	margin-top: 3em;
+	margin-bottom: 0;
+	border-bottom: 1px solid $clr-gray-3;
+	padding-left: 0;
+}
+// End mobile slider
 
 .bgi-man {
 	background-image: url("../img/man-in-suit.png");
@@ -381,7 +466,7 @@ header {
 	background-repeat: no-repeat;
 	background-color: $clr-dark;
 	background-size: cover;
-	min-height: 500px;
+	min-height: 400px;
 	width: 100%;
 }
 
@@ -395,7 +480,7 @@ header {
 	background-repeat: no-repeat;
 	background-color: $clr-light;
 	background-size: cover;
-	min-height: 650px;
+	min-height: 400px;
 	width: 100%;
 }
 
@@ -407,12 +492,6 @@ header {
 	background-size: cover;
 	min-height: 650px;
 	width: 100%;
-}
-
-.half-bgc-light-gray-3 {
-	padding-top: 15em;
-	padding-bottom: 17em;
-	background: linear-gradient(180deg, $clr-light 50%, $clr-gray-3 50%);
 }
 
 // Above footer
@@ -428,6 +507,10 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: $clr-dark;
+}
+
+.project-interest-div {
+	min-height: 400px;
 }
 
 // Footer
@@ -446,6 +529,15 @@ footer {
 			color: $clr-gray-4;
 		}
 	}
+}
+
+.top-footer-mobile {
+	padding-top: 6em;
+	padding-bottom: 4em;
+}
+
+.bottom-footer-mobile {
+	padding-bottom: 10em;
 }
 
 // Single project page
@@ -469,30 +561,14 @@ footer {
 	margin: 20em 0;
 }
 
-.bgi-old-situation {
-	background-image: url("../img/project/VisserstraatK2_project_4.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	min-height: 1000px;
-	width: 100%;
-	position: relative;
-}
-
-.bgi-new-situation {
-	background-image: url("../img/project/VisserstraatK2_project_5.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	min-height: 1000px;
-	width: 100%;
-	position: relative;
+.old-new-situation-div {
+	padding-top: 2em;
 }
 
 .situation-overlay {
 	position: absolute;
-	bottom: 1.5em;
-	left: 2.5em;
+	bottom: 1em;
+	left: 1.5em;
 	width: max-content;
 	padding: 0.75em 1.5em;
 }
@@ -501,6 +577,10 @@ footer {
 .container-fluid {
 	padding-right: 2.333em;
 	padding-left: 2.333em;
+	&.img-padding {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 @media only screen and (min-width: 576px) {
@@ -510,9 +590,18 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+	a {
+		&.a-btn {
+			padding: 0.5em 3em;
+		}
+	}
 	.container-fluid {
 		padding-right: 3.333em;
 		padding-left: 3.333em;
+		&.img-padding {
+			padding-left: 3.333em;
+			padding-right: 3.333em;
+		}
 	}
 	header {
 		width: 50%;
@@ -537,7 +626,51 @@ footer {
 			height: 500px;
 		}
 	}
+	.about-us-container,
+	.projects-container {
+		padding-top: 15em;
+	}
+	.project-main-paragraph {
+		padding-top: 9em;
+	}
+
+	.light-gray-1-bgc-div {
+		height: 15em;
+	}
+
+	.half-bgc-light-gray-3 {
+		background: linear-gradient(180deg, $clr-gray-1 50%, $clr-gray-3 50%);
+	}
+
+	.bgi-building {
+		min-height: 650px;
+	}
+
+	.bgi-dark-overlay {
+		background-image: url("../img/dark-bg-img-01.svg");
+	}
 }
 
 @media only screen and (min-width: 1200px) {
+}
+
+// Media queries max width
+@media only screen and (max-width: 576px) {
+}
+@media only screen and (max-width: 678px) {
+}
+@media only screen and (max-width: 992px) {
+	.container-fluid {
+		&.no-px-small {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+	}
+
+	#team {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media only screen and (max-width: 1200px) {
 }

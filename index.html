@@ -13,6 +13,10 @@
 			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+		/>
 		<link rel="stylesheet" href="css/styles.min.css" />
 		<title>Future Vastgoed</title>
 		<script src="js/custom.js" defer></script>
@@ -43,10 +47,10 @@
 								>
 							</li>
 							<li class="navigation-bottom__ul-li">
-								<a href="#team" class="navigation-bottom__ul-li-a">Team</a>
+								<a href="#team-div" class="navigation-bottom__ul-li-a">Team</a>
 							</li>
 							<li class="navigation-bottom__ul-li">
-								<a href="#contact" class="navigation-bottom__ul-li-a"
+								<a href="#s" class="navigation-bottom__ul-li-a"
 									>Contact</a
 								>
 							</li>
@@ -73,10 +77,10 @@
 									<a href="#projects" class="nav__ul-li-a mx-4">Projecten</a>
 								</li>
 								<li class="nav__ul-li">
-									<a href="#team" class="nav__ul-li-a mx-4">Team</a>
+									<a href="#team-div" class="nav__ul-li-a mx-4">Team</a>
 								</li>
 								<li class="nav__ul-li">
-									<a href="#contact" class="nav__ul-li-a mx-4">Contact</a>
+									<a href="#contact-div" class="nav__ul-li-a mx-4">Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -101,25 +105,6 @@
 							</h1>
 						</div>
 					</div>
-					<div
-						class="
-							col-lg-2
-							offset-lg-1
-							d-flex
-							justify-content-center
-							align-items-end
-						"
-					>
-						<div class="div-a-scroll-down d-none d-lg-block">
-							<a href="#scroll-down-div" class="a-scroll-down clr-gray-2"
-								><img
-									src="img/scroll-down-light.svg"
-									alt=""
-									class="mr-4"
-								/>Scroll down</a
-							>
-						</div>
-					</div>
 				</div>
 				<!-- Desktop -->
 				<img
@@ -127,7 +112,7 @@
 					alt=""
 					class="header__image-overlay w-100 d-none d-lg-block"
 				/>
-				<div class="container-fluid header-text d-none d-lg-block">
+				<div class="container-fluid header-text d-none d-lg-flex">
 					<div class="col-lg-4">
 						<div class="header__image-title text-center">
 							<h1 class="clr-gray-4 mb-0">
@@ -145,7 +130,7 @@
 						"
 					>
 						<div class="div-a-scroll-down">
-							<a href="#scroll-down-div" class="a-scroll-down clr-gray-2"
+							<a href="#about-us" class="a-scroll-down clr-gray-2"
 								><img
 									src="img/scroll-down-light.svg"
 									alt=""
@@ -157,10 +142,14 @@
 				</div>
 			</div>
 
-			<div tabindex="-1" id="scroll-down-div" class="container-fluid bgc-dark">
-				<div class="row py-lg-5">
-					<div tabindex="-1" id="about-us" class="col-lg-6 offset-lg-3 py-lg-5">
-						<p class="bgc-dark py-5 mb-5">
+			<div
+				tabindex="-1"
+				id="about-us"
+				class="container-fluid bgc-dark about-us-container"
+			>
+				<div class="row">
+					<div tabindex="-1" class="col-lg-6 offset-lg-3">
+						<p class="bgc-dark">
 							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
 							nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
 							erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -176,14 +165,18 @@
 				</div>
 			</div>
 
-			<div tabindex="-1" id="projects" class="container-fluid bgc-dark pb-5">
+			<div
+				tabindex="-1"
+				id="projects"
+				class="container-fluid bgc-dark pb-5 projects-container"
+			>
 				<div class="row">
 					<div class="col-lg-5 offset-lg-1">
-						<h1 class="h1-projects fs-4080 fw-medium">
-							Projecten<sup class="projects-sup fs-1525 fw-light">4</sup>
+						<h1 class="h1-projects fs-4080 fw-medium mb-0">
+							Projecten <sup class="projects-sup fs-1525 fw-light">4</sup>
 						</h1>
 					</div>
-					<div class="col-lg-5 d-flex align-items-end">
+					<div class="col-lg-5 d-flex align-items-end mt-3 mt-lg-0">
 						<a href="#" class="a-gray-4 fs-1525 clr-gray-4 mr-5"
 							>Nieuwe projecten</a
 						>
@@ -198,11 +191,12 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-5 offset-lg-1">
-							<div class="my-4" id="project1">
+							<div class="project-detail-inner" id="project1">
 								<div class="col bgi-project"></div>
+								<img src="../img/plus-symbol.svg" alt="" class="plus-symbol" />
 								<div class="col bgc-gray-5 py-4 px-5">
 									<div class="row">
-										<div class="col-lg-6 d-flex flex-column">
+										<div class="col-lg-6 d-flex flex-column px-0 px-lg-3">
 											<span class="clr-light fs-2530 fw-extra-light"
 												>Projectnaam</span
 											>
@@ -228,11 +222,12 @@
 								</div>
 							</div>
 
-							<div class="my-4" id="project2">
+							<div class="project-detail-inner" id="project2">
 								<div class="col bgi-project"></div>
+								<img src="../img/plus-symbol.svg" alt="" class="plus-symbol" />
 								<div class="col bgc-gray-5 py-4 px-5">
 									<div class="row">
-										<div class="col-lg-6 d-flex flex-column">
+										<div class="col-lg-6 d-flex flex-column px-0 px-lg-3">
 											<span class="clr-light fs-2530 fw-extra-light"
 												>Projectnaam</span
 											>
@@ -259,11 +254,12 @@
 							</div>
 						</div>
 						<div class="col-lg-5">
-							<div class="my-4" id="project3">
+							<div class="project-detail-inner" id="project3">
 								<div class="col bgi-project"></div>
+								<img src="../img/plus-symbol.svg" alt="" class="plus-symbol" />
 								<div class="col bgc-gray-5 py-4 px-5">
 									<div class="row">
-										<div class="col-lg-6 d-flex flex-column">
+										<div class="col-lg-6 d-flex flex-column px-0 px-lg-3">
 											<span class="clr-light fs-2530 fw-extra-light"
 												>Projectnaam</span
 											>
@@ -289,11 +285,12 @@
 								</div>
 							</div>
 
-							<div class="my-4" id="project4">
+							<div class="project-detail-inner" id="project4">
 								<div class="col bgi-project"></div>
+								<img src="../img/plus-symbol.svg" alt="" class="plus-symbol" />
 								<div class="col bgc-gray-5 py-4 px-5">
 									<div class="row">
-										<div class="col-lg-6 d-flex flex-column">
+										<div class="col-lg-6 d-flex flex-column px-0 px-lg-3">
 											<span class="clr-light fs-2530 fw-extra-light"
 												>Projectnaam</span
 											>
@@ -323,10 +320,10 @@
 				</div>
 			</div>
 
-			<div class="container-fluid">
+			<div class="container-fluid project-main-text">
 				<div class="row">
 					<div class="col-lg-7 offset-lg-1">
-						<h2 class="py-5 mt-5">
+						<h2 class="">
 							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
 							nonumy eirmod tempor invidunt ut.
 						</h2>
@@ -334,10 +331,10 @@
 				</div>
 			</div>
 
-			<div class="container-fluid">
+			<div class="container-fluid project-main-paragraph">
 				<div class="row">
 					<div class="col-lg-6 offset-lg-3">
-						<p class="py-lg- 5">
+						<p class="">
 							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
 							nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
 							erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -353,6 +350,16 @@
 				</div>
 			</div>
 
+			<div tabindex="-1" id="team-div" class="light-gray-1-bgc-div">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col">
+							<div class=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div
 				tabindex="-1"
 				id="team"
@@ -361,38 +368,79 @@
 				<div class="row">
 					<!-- Mobile slider team -->
 					<div class="col d-lg-none">
-						<div
-							id="projectsSlider"
-							class="carousel slide"
-							data-ride="carousel"
-						>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img
-										src="../img/man-in-suit.png"
-										class="d-block w-100"
-										alt="..."
-									/>
+						<div class="mobile-center-slider">
+							<div>
+								<img
+									src="../img/man-in-suit.png"
+									class="d-block w-100"
+									alt=""
+								/>
+								<div class="r">
+									<div class="col bgc-dark d-flex flex-column py-4 px-4">
+										<span class="clr-light fs-2530 fw-extra-light">
+											Projectnaam
+										</span>
+										<span class="clr-light fs-1520 fw-extra-light"
+											>Project detail</span
+										>
+									</div>
 								</div>
-								<div class="carousel-item">
-									<img
-										src="../img/man-in-suit.png"
-										class="d-block w-100"
-										alt="..."
-									/>
+							</div>
+							<div>
+								<img
+									src="../img/man-in-suit.png"
+									class="d-block w-100"
+									alt=""
+								/>
+								<div class="r">
+									<div class="col bgc-dark d-flex flex-column py-4 px-4">
+										<span class="clr-light fs-2530 fw-extra-light">
+											Projectnaam
+										</span>
+										<span class="clr-light fs-1520 fw-extra-light"
+											>Project detail</span
+										>
+									</div>
 								</div>
-								<div class="carousel-item">
-									<img
-										src="../img/man-in-suit.png"
-										class="d-block w-100"
-										alt="..."
-									/>
+							</div>
+							<div>
+								<img
+									src="../img/man-in-suit.png"
+									class="d-block w-100"
+									alt=""
+								/>
+								<div class="r">
+									<div class="col bgc-dark d-flex flex-column py-4 px-4">
+										<span class="clr-light fs-2530 fw-extra-light">
+											Projectnaam
+										</span>
+										<span class="clr-light fs-1520 fw-extra-light"
+											>Project detail</span
+										>
+									</div>
+								</div>
+							</div>
+							<div>
+								<img
+									src="../img/man-in-suit.png"
+									class="d-block w-100"
+									alt=""
+								/>
+								<div class="r">
+									<div class="col bgc-dark d-flex flex-column py-4 px-4">
+										<span class="clr-light fs-2530 fw-extra-light">
+											Projectnaam
+										</span>
+										<span class="clr-light fs-1520 fw-extra-light"
+											>Project detail</span
+										>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<!-- desktop -->
-					<div class="col-lg-10 offset-lg-1 d-none d-lg-block">
+					<div class="col-lg-10 offset-lg-1 team-container d-none d-lg-block">
 						<div class="row">
 							<div class="col-lg-3">
 								<div class="col bgi-man"></div>
@@ -435,8 +483,34 @@
 				</div>
 			</div>
 
-			<div tabindex="-1" id="contact" class="bgi-light-dark-diagonal">
-				<div class="container-fluid">
+			<div tabindex="-1" class="" id="contact-div">
+				<div class="light-gray-1-bgc-div h-11em d-lg-none">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col">
+								<div class=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="light-gray-3-bgc-div d-none d-lg-block">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col">
+								<div class=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				tabindex="-1"
+				id="contact"
+				class="bgi-light-dark-diagonal contact-container"
+			>
+				<div class="container-fluid no-px-small">
 					<div class="row">
 						<div class="col-lg-6 bgi-building">
 							<div class=""></div>
@@ -448,10 +522,18 @@
 								d-flex
 								flex-column
 								justify-content-center
-								bgc-light
+								bgc-gray-1
 							"
 						>
-							<div class="px-5">
+							<div
+								class="
+									project-interest-div
+									px-4 px-lg-5
+									d-flex
+									flex-column
+									justify-content-center
+								"
+							>
 								<h2 class="">Interesse in een van onze projecten?</h2>
 								<p class="my-5">
 									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -459,7 +541,9 @@
 									aliquyam erat, sed diam.
 								</p>
 								<div class="d-flex">
-									<a href="#" class="a-btn a-btn-dark rounded-pill mr-lg-4"
+									<a
+										href="tel:0123456789"
+										class="a-btn a-btn-dark rounded-pill mr-4"
 										>Bel ons</a
 									>
 									<a
@@ -476,7 +560,49 @@
 		</main>
 
 		<footer class="bgc-dark pt-lg-5">
-			<div class="container-fluid py-lg-5">
+			<!-- Mobile -->
+			<div class="container-fluid top-footer-mobile d-lg-none">
+				<div class="row">
+					<div class="col-3 px-0">
+						<img src="../img/footer-icon-small.png" alt="" class="" />
+					</div>
+					<div class="col-8">
+						<address class="">
+							<p class="fs-2030 mb-0 clr-light fw-extra-light">
+								Future vastgoed
+							</p>
+							<p class="fs-2030 mb-0 clr-light fw-extra-light">
+								Habraken 2321M
+							</p>
+							<p class="fs-2030 mb-0 clr-light fw-extra-light">
+								5507 TK Veldhoven
+							</p>
+						</address>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-8 offset-3">
+						<address class="">
+							<p class="fs-2030 mb-0 clr-light fw-extra-light">
+								<a
+									href="mailto:info@futurevast.com"
+									class="footer-a-light clr-light fs-2030"
+								>
+									Info@futurevast.com
+								</a>
+							</p>
+							<p class="fs-2030 mb-0 clr-light fw-extra-light">
+								Habraken 2321M
+							</p>
+							<p class="fs-2030 mb-0 clr-light fw-extra-light">
+								5507 TK Veldhoven
+							</p>
+						</address>
+					</div>
+				</div>
+			</div>
+			<!-- Desktop -->
+			<div class="container-fluid top-footer-desktop py-lg-5 d-none d-lg-block">
 				<div class="row my-lg-5">
 					<div class="col-lg-1 offset-lg-1">
 						<img src="img/footer-icon.png" alt="" class="" />
@@ -499,7 +625,7 @@
 							<p class="fs-2030 mb-0 clr-light fw-extra-light">
 								<a
 									href="mailto:info@futurevast.com"
-									class="footer-a-light clr-light fs-1530"
+									class="footer-a-light clr-light fs-2030"
 								>
 									Info@futurevast.com
 								</a>
@@ -519,20 +645,46 @@
 						<a href="#projects" class="fs-2030 clr-gray-4 fw-extra-light"
 							>Projecten</a
 						>
-						<a href="#team" class="fs-2030 clr-gray-4 fw-extra-light">Team</a>
+						<a href="#team-div" class="fs-2030 clr-gray-4 fw-extra-light"
+							>Team</a
+						>
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid py-lg-5">
+
+			<!-- Mobile bottom footer -->
+			<div class="container-fluid bottom-footer-mobile d-lg-none">
+				<div class="row my-4">
+					<a href="#" class="fs-1520 clr-gray-4 fw-extra-light mr-5"
+						>Voorwaarden</a
+					>
+					<a href="#" class="fs-1520 clr-gray-4 fw-extra-light">Disclaimer</a>
+				</div>
+				<div class="row">
+					<a href="#" class="fs-1520 clr-gray-4 fw-extra-light mr-5"
+						>Privacyverklaring</a
+					>
+					<p class="fs-1520 clr-gray-4 fw-extra-light">
+						&copy; Future Vastgoed 2021
+					</p>
+				</div>
+			</div>
+
+			<!-- Desktop bottom footer -->
+			<div
+				class="container-fluid bottom-footer-desktop py-lg-5 d-none d-lg-block"
+			>
 				<div class="row">
 					<div class="col-lg-4 offset-lg-1 d-flex justify-content-between">
 						<a href="#" class="fs-1520 clr-gray-4 fw-extra-light"
 							>Voorwaarden</a
 						>
-						<a href="#" class="fs-1520 clr-gray-4 fw-extra-light"
+						<a href="#" class="fs-1520 clr-gray-4 fw-extra-light ml-4"
 							>Privacyverklaring</a
 						>
-						<a href="#" class="fs-1520 clr-gray-4 fw-extra-light">Disclaimer</a>
+						<a href="#" class="fs-1520 clr-gray-4 fw-extra-light ml-4"
+							>Disclaimer</a
+						>
 					</div>
 					<div class="col-lg-3 offset-4">
 						<p class="fs-1520 clr-gray-4 fw-extra-light">
@@ -547,6 +699,10 @@
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 			crossorigin="anonymous"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
 		></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
