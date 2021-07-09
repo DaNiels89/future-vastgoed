@@ -1,31 +1,10 @@
 $(document).ready(function () {
 	$(".mobile-center-slider").slick({
+		arrows: false,
+		dots: true,
+		autoplay: true,
 		centerMode: true,
-		centerPadding: "30px",
-		slidesToShow: 3,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					arrows: false,
-					dots: true,
-					autoplay: true,
-					centerMode: true,
-					centerPadding: "40px",
-					slidesToShow: 3,
-				},
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					arrows: false,
-					dots: true,
-					autoplay: true,
-					centerMode: true,
-					centerPadding: "40px",
-					slidesToShow: 1,
-				},
-			},
-		],
+		centerPadding: "calc(2.333em - 0.5em)",
+		slidesToShow: 1,
 	});
 });
