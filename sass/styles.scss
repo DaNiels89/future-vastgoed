@@ -389,7 +389,7 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: $clr-dark;
-	background-size: 100%;
+	background-size: cover;
 	min-height: 250px;
 	width: 100%;
 	position: relative;
@@ -649,6 +649,10 @@ footer {
 
 	.project-details-div {
 		margin-top: 16em;
+	}
+
+	.bgi-project {
+		background-size: 100%;
 	}
 }
 
