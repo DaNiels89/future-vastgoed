@@ -26,38 +26,40 @@
 			<!-- Mobile top -->
 			<div class="container-fluid d-lg-none bgi-mobile">
 				<div class="row">
-					<div class="col">
-						<img src="../img/nav-logo.svg" alt="" class="mt-5 ml-3" />
+					<div class="col nav-header-mobile">
+						<img src="../img/logo-header-mobile.svg" alt="" class="" />
 					</div>
 				</div>
 			</div>
 			<!-- Mobile bottom -->
-			<!-- <div class="container-fluid lg-none navigation-bottom">
-				<div class="row">
-					<div class="col-12">
-						<ul class="navigation-bottom__ul">
-							<li class="navigation-bottom__ul-li">
-								<a href="#about-us" class="navigation-bottom__ul-li-a"
-									>Over ons</a
-								>
-							</li>
-							<li class="navigation-bottom__ul-li">
-								<a href="#projects" class="navigation-bottom__ul-li-a"
-									>Projecten</a
-								>
-							</li>
-							<li class="navigation-bottom__ul-li">
-								<a href="#team-div" class="navigation-bottom__ul-li-a">Team</a>
-							</li>
-							<li class="navigation-bottom__ul-li">
-								<a href="#s" class="navigation-bottom__ul-li-a"
-									>Contact</a
-								>
-							</li>
-						</ul>
+			<div class="navigation-bottom d-lg-none">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<ul class="navigation-bottom__ul">
+								<li class="navigation-bottom__ul-li active">
+									<a href="#about-us" class="navigation-bottom__ul-li-a"
+										>Over ons</a
+									>
+								</li>
+								<li class="navigation-bottom__ul-li">
+									<a href="#projects" class="navigation-bottom__ul-li-a"
+										>Projecten</a
+									>
+								</li>
+								<li class="navigation-bottom__ul-li">
+									<a href="#team-div" class="navigation-bottom__ul-li-a"
+										>Team</a
+									>
+								</li>
+								<li class="navigation-bottom__ul-li">
+									<a href="#s" class="navigation-bottom__ul-li-a">Contact</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 			<!-- Desktop -->
 			<div class="container-fluid bgc-light d-none d-lg-block">
@@ -89,7 +91,7 @@
 			</div>
 		</header>
 
-		<main class="">
+		<main class="main-header">
 			<div class="header__background-image position-relative">
 				<!-- Mobile -->
 				<img
@@ -187,7 +189,63 @@
 				</div>
 			</div>
 
-			<div class="bgi-dark-overlay pt-5">
+			<!-- Mobile projects -->
+			<div class="container-fluid bgc-dark d-lg-none">
+				<div class="row">
+					<div class="col">
+						<div class="bgi-projects-mobile first-project">
+							<div class="bgi-projects-mobile-text">
+								<span class="clr-light fs-2530 fw-extra-light"
+									>Projectnaam</span
+								>
+								<span class="clr-light fs-1520 fw-extra-light"
+									>Project detail</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid bgi-dark-overlay d-lg-none">
+				<div class="row">
+					<div class="col">
+						<div class="bgi-projects-mobile">
+							<div class="bgi-projects-mobile-text">
+								<span class="clr-light fs-2530 fw-extra-light"
+									>Projectnaam</span
+								>
+								<span class="clr-light fs-1520 fw-extra-light"
+									>Project detail</span
+								>
+							</div>
+						</div>
+						<div class="bgi-projects-mobile">
+							<div class="bgi-projects-mobile-text">
+								<span class="clr-light fs-2530 fw-extra-light"
+									>Projectnaam</span
+								>
+								<span class="clr-light fs-1520 fw-extra-light"
+									>Project detail</span
+								>
+							</div>
+						</div>
+						<div class="bgi-projects-mobile">
+							<div class="bgi-projects-mobile-text">
+								<span class="clr-light fs-2530 fw-extra-light"
+									>Projectnaam</span
+								>
+								<span class="clr-light fs-1520 fw-extra-light"
+									>Project detail</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Desktop projects -->
+			<div class="bgi-dark-overlay pt-5 d-none d-lg-block">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-5 offset-lg-1">
@@ -510,8 +568,56 @@
 				id="contact"
 				class="bgi-light-dark-diagonal contact-container"
 			>
-				<div class="container-fluid no-px-small">
+				<!-- Mobile -->
+				<div class="container-fluid no-px-small d-lg-none">
 					<div class="row">
+						<div class="col-lg-6 bgi-building">
+							<div class=""></div>
+						</div>
+						<div
+							class="
+								col-lg-6
+								p-lg-5
+								d-flex
+								flex-column
+								justify-content-center
+								bgc-gray-1
+							"
+						>
+							<div
+								class="
+									project-interest-div
+									px-4 px-lg-5
+									d-flex
+									flex-column
+									justify-content-center
+								"
+							>
+								<h2 class="">Interesse in een van onze projecten?</h2>
+								<p class="my-5">
+									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+									diam nonumy eirmod tempor invidunt ut labore et dolore magna
+									aliquyam erat, sed diam.
+								</p>
+								<div class="d-flex">
+									<a
+										href="tel:0123456789"
+										class="a-btn a-btn-dark rounded-pill mr-4"
+										>Bel ons</a
+									>
+									<a
+										href="mailto:info@futurevast.com"
+										class="a-btn a-btn-dark rounded-pill"
+										>Mail ons</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Desktop -->
+				<div class="container-fluid d-none d-lg-block">
+					<div class="row mx-0">
 						<div class="col-lg-6 bgi-building">
 							<div class=""></div>
 						</div>
@@ -605,7 +711,7 @@
 			<div class="container-fluid top-footer-desktop py-lg-5 d-none d-lg-block">
 				<div class="row my-lg-5">
 					<div class="col-lg-1 offset-lg-1">
-						<img src="img/footer-logo.svg" alt="" class="" />
+						<img src="img/footer-logo.svg" alt="" class="pt-3" />
 					</div>
 					<div class="col-lg-3">
 						<address class="">
