@@ -9,7 +9,7 @@ $clamp1530: clamp(1rem, 2.5vw, 2rem);
 $clamp2030: clamp(1.333rem, 2.5vw, 2rem);
 $clamp2530: clamp(1.667rem, 2.5vw, 2rem);
 $clamp3060: clamp(2rem, 5vw, 4rem);
-$clamp4080: clamp(2.667rem, 10vw, 5.333rem);
+$clamp4080: clamp(2.667rem, 5vw, 5.333rem);
 
 .fs {
 	&-1520 {
@@ -167,15 +167,17 @@ p {
 a {
 	font-size: 1rem;
 	font-size: $clamp1525;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
 	&.a-btn {
 		font-size: $clamp1520;
-		text-decoration: none;
 		padding: 1em 2em;
 	}
 	&.a-gray-4 {
 		&:hover,
 		&:focus {
-			text-decoration: none;
 			color: $clr-gray-4;
 		}
 	}
@@ -219,14 +221,32 @@ header {
 	z-index: 9999;
 }
 
+.nav-top-block {
+	min-width: 810px;
+}
+
 .bgi-mobile {
 	background-image: url("../img/nav-mobile-bgi-01.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 20vh;
+	height: 10em;
 	width: 100%;
-	display: flex;
+	&.project-page-nav {
+		height: 12em;
+	}
+}
+
+.row-mobile-header {
+	width: 100%;
 	align-items: center;
+	justify-content: space-between;
+	padding-top: 3.334em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.nav-header-mobile {
+	padding-left: 0;
 }
 
 .nav__div {
@@ -253,7 +273,6 @@ header {
 	color: $clr-gray-5;
 	&:hover,
 	&:focus {
-		text-decoration: none;
 		color: $clr-gray-5;
 	}
 }
@@ -262,7 +281,6 @@ header {
 	color: $clr-dark;
 	&:hover,
 	&:focus {
-		text-decoration: none;
 		color: $clr-dark;
 	}
 }
@@ -309,9 +327,9 @@ header {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-color: $clr-light;
-	background-size: cover;
+	background-size: 100%;
 	min-height: 100vh;
-	width: 100%;
+	width: 100vw;
 }
 
 .header__image-overlay {
@@ -344,7 +362,6 @@ header {
 	color: $clr-gray-2;
 	&:hover,
 	&:focus {
-		text-decoration: none;
 		color: $clr-gray-2;
 	}
 }
@@ -574,7 +591,6 @@ footer {
 		}
 		&:hover,
 		&:focus {
-			text-decoration: none;
 			color: $clr-gray-4;
 		}
 	}
@@ -617,13 +633,13 @@ footer {
 	padding-left: 2.333em;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 575px) {
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
 	a {
 		&.a-btn {
 			padding: 0.5em 3em;
@@ -636,6 +652,7 @@ footer {
 
 	.header__background-image {
 		background-image: url("../img/home-main.png");
+		background-size: cover;
 	}
 
 	header {
@@ -716,15 +733,15 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1199px) {
 }
 
 // Media queries max width
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
 }
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 677px) {
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 	.container-fluid {
 		&.no-px-small {
 			padding-left: 1em;
@@ -763,5 +780,5 @@ footer {
 		transform: translateY(-6.333em);
 	}
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
 }
