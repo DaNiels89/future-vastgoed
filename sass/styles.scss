@@ -167,6 +167,7 @@ p {
 a {
 	font-size: 1rem;
 	font-size: $clamp1525;
+	line-height: 1.334;
 	&:hover,
 	&:focus {
 		text-decoration: none;
@@ -222,7 +223,11 @@ header {
 }
 
 .nav-top-block {
-	min-width: 810px;
+	min-width: 55em;
+}
+
+.project-desktop-header {
+	min-width: 35em;
 }
 
 .bgi-mobile {
@@ -425,7 +430,7 @@ header {
 	min-height: 250px;
 	width: 100%;
 	position: relative;
-	transition: background-size 0.3s;
+	transition: transform 0.3s;
 
 	&::after {
 		width: 100%;
@@ -451,13 +456,15 @@ header {
 }
 
 .project-detail-inner {
-	padding-top: 1em;
-	padding-bottom: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
 	position: relative;
+	overflow: hidden;
 
 	&:hover {
 		.bgi-project {
-			background-size: 120%;
+			// background-size: 120%;
+			transform: scale(1.4);
 
 			&::after {
 				opacity: 1;
@@ -633,16 +640,16 @@ footer {
 	padding-left: 2.333em;
 }
 
-@media only screen and (min-width: 575px) {
+@media only screen and (min-width: 576px) {
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 992px) {
 	a {
 		&.a-btn {
-			padding: 0.5em 3em;
+			padding: 0.3em 1em;
 		}
 	}
 	.container-fluid {
@@ -663,6 +670,10 @@ footer {
 	}
 	.bgi-project {
 		min-height: 400px;
+	}
+
+	#projects {
+		transform: translateY(-1px);
 	}
 
 	#project2,
@@ -700,6 +711,7 @@ footer {
 
 	.bgi-dark-overlay {
 		background-image: url("../img/dark-bg-img-01.svg");
+		transform: translateY(-2px);
 	}
 
 	.title-left-text-right {
@@ -714,7 +726,7 @@ footer {
 	}
 
 	.bgi-project {
-		background-size: 100%;
+		// background-size: 100%;
 	}
 
 	.bgi-contact {
@@ -731,9 +743,22 @@ footer {
 	.col-border-bottom {
 		border-bottom: 1px solid $clr-gray-1;
 	}
+
+	.interesse-div {
+		// transform: translateY(2px);
+	}
+
+	footer {
+		// transform: translateY(1px);
+	}
 }
 
-@media only screen and (min-width: 1199px) {
+@media only screen and (min-width: 1200px) {
+	a {
+		&.a-btn {
+			padding: 0.6em 2.8em;
+		}
+	}
 }
 
 // Media queries max width
