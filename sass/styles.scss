@@ -777,7 +777,14 @@ footer {
 // Media queries max width
 @media only screen and (max-width: 575px) {
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 767px) {
+	.main-header {
+		transform: translateY(-6.333em);
+	}
+
+	footer {
+		transform: translateY(-6.333em);
+	}
 }
 @media only screen and (max-width: 991px) {
 	.container-fluid {
@@ -797,10 +804,6 @@ footer {
 		margin-right: 0;
 	}
 
-	.main-header {
-		transform: translateY(-6.333em);
-	}
-
 	.detail-above-description {
 		&.first-detail {
 			padding-top: 0.667em;
@@ -812,10 +815,6 @@ footer {
 		padding-bottom: 0.667em;
 		border-bottom: 1px solid $clr-light;
 		margin-bottom: 0.667em;
-	}
-
-	footer {
-		transform: translateY(-6.333em);
 	}
 }
 @media only screen and (max-width: 1199px) {
