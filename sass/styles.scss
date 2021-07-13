@@ -131,6 +131,7 @@ html {
 	&:focus-within {
 		scroll-behavior: smooth;
 	}
+	overflow-x: hidden;
 }
 
 body {
@@ -138,7 +139,7 @@ body {
 	font-weight: $fw-light;
 	color: $clr-gray-5;
 	background: $clr-gray-1;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 }
 
 h1 {
@@ -413,7 +414,7 @@ header {
 .bgi-dark-overlay {
 	background-image: url("../img/bgi-first-project-01.svg");
 	background-repeat: no-repeat;
-	transform: translateY(-1px);
+	// transform: translateY(-1px);
 }
 
 .bgi-dark-overlay-mobile {
@@ -644,6 +645,17 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+	.bgi-mobile {
+		height: 20em;
+	}
+
+	.header__image-overlay {
+		// transform: translateY(2px);
+	}
+
+	#about-us {
+		// transform: translateY(1px);
+	}
 }
 
 @media only screen and (min-width: 992px) {
@@ -673,7 +685,7 @@ footer {
 	}
 
 	#projects {
-		transform: translateY(-1px);
+		// transform: translateY(-1px);
 	}
 
 	#project2,
@@ -711,7 +723,7 @@ footer {
 
 	.bgi-dark-overlay {
 		background-image: url("../img/dark-bg-img-01.svg");
-		transform: translateY(-2px);
+		// transform: translateY(-2px);
 	}
 
 	.title-left-text-right {
@@ -722,7 +734,7 @@ footer {
 		padding-top: 8em;
 		padding-bottom: 16em;
 		margin-top: 16em;
-		transform: translateY(1px);
+		// transform: translateY(1px);
 	}
 
 	.bgi-project {

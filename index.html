@@ -27,13 +27,15 @@
 			<div class="container-fluid d-lg-none bgi-mobile">
 				<div class="row row-mobile-header">
 					<div class="col nav-header-mobile">
-						<img
-							src="../img/logo-header-mobile.svg"
-							alt=""
-							class=""
-							width="115.24"
-							height="40.69"
-						/>
+						<a href="/" class="">
+							<img
+								src="../img/logo-header-mobile.svg"
+								alt=""
+								class=""
+								width="115.24"
+								height="40.69"
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -105,9 +107,26 @@
 				<img
 					src="img/header-overlay-mob-01.svg"
 					alt=""
-					class="header__image-overlay w-100 d-lg-none"
+					class="header__image-overlay w-100 d-md-none"
 				/>
-				<div class="container-fluid header-text-mobile d-lg-none">
+				<div class="container-fluid header-text-mobile d-md-none">
+					<div class="col px-0">
+						<div class="header__image-title">
+							<h1 class="main-future-title-mobile clr-gray-4 mb-0">
+								Your <span class="clr-light">Future</span><br />starts here
+							</h1>
+						</div>
+					</div>
+				</div>
+				<!-- Tablet -->
+				<img
+					src="img/header-overlay-tablet.svg"
+					alt=""
+					class="header__image-overlay w-100 d-none d-md-block d-lg-none"
+				/>
+				<div
+					class="container-fluid header-text-mobile d-none d-md-block d-lg-none"
+				>
 					<div class="col px-0">
 						<div class="header__image-title">
 							<h1 class="main-future-title-mobile clr-gray-4 mb-0">
@@ -421,11 +440,11 @@
 			<div
 				tabindex="-1"
 				id="team"
-				class="container-fluid half-bgc-light-gray-3"
+				class="container-fluid half-bgc-light-gray-3 px-lg-3"
 			>
 				<div class="row no-mx-mobile">
-					<!-- Mobile slider team -->
-					<div class="col d-lg-none first-mobile-center-slider-div px-0">
+					<!-- Mobile and tablet slider team -->
+					<div class="col d-xl-none first-mobile-center-slider-div px-0">
 						<div class="mobile-center-slider">
 							<div>
 								<img
@@ -498,9 +517,9 @@
 						</div>
 					</div>
 					<!-- desktop -->
-					<div class="col-lg-10 offset-lg-1 team-container d-none d-lg-block">
+					<div class="col-xl-10 offset-xl-1 team-container d-none d-xl-block">
 						<div class="row">
-							<div class="col-lg-3">
+							<div class="col-xl-3">
 								<div class="col bgi-man"></div>
 								<div class="col bgc-dark d-flex flex-column py-4 px-5">
 									<span class="clr-light fs-2530 fw-extra-light"
@@ -509,7 +528,7 @@
 									<span class="clr-light fs-1520 fw-extra-light">CEO</span>
 								</div>
 							</div>
-							<div class="col-lg-3">
+							<div class="col-xl-3">
 								<div class="col bgi-man"></div>
 								<div class="col bgc-dark d-flex flex-column py-4 px-5">
 									<span class="clr-light fs-2530 fw-extra-light"
@@ -518,7 +537,7 @@
 									<span class="clr-light fs-1520 fw-extra-light">CEO</span>
 								</div>
 							</div>
-							<div class="col-lg-3">
+							<div class="col-xl-3">
 								<div class="col bgi-man"></div>
 								<div class="col bgc-dark d-flex flex-column py-4 px-5">
 									<span class="clr-light fs-2530 fw-extra-light"
@@ -527,7 +546,7 @@
 									<span class="clr-light fs-1520 fw-extra-light">CEO</span>
 								</div>
 							</div>
-							<div class="col-lg-3">
+							<div class="col-xl-3">
 								<div class="col bgi-man"></div>
 								<div class="col bgc-dark d-flex flex-column py-4 px-5">
 									<span class="clr-light fs-2530 fw-extra-light"
